@@ -22,6 +22,7 @@
           "options": {
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
+            "outputPath": "dist/informe-associacao",
             "inlineStyleLanguage": "scss",
             "assets": [
               {
@@ -71,6 +72,15 @@
         },
         "test": {
           "builder": "@angular/build:unit-test"
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "repo": "https://github.com/martins86/informe-associacao.git",
+            "baseHref": "/informe-associacao/",
+            "name": "martins86",
+            "email": "martins86@gmail.com"
+          }
         }
       }
     }
