@@ -32,8 +32,7 @@ main {
     margin: 8mm auto;
     padding: 15mm;
     width: 794px;
-    height: 100vh;
-    max-height: 1124px;
+    min-height: 1058px;
     overflow: hidden;
     background-color: #ffffff;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.23);
@@ -59,13 +58,13 @@ footer {
         display: none !important;
     }
 
-    body {
-        background: none;
-    }
-
     body,
-    main {
+    main,
+    footer {
         padding: 0;
+        background: none;
+        box-shadow: none;
+        border: none;
     }
 
     .page {
@@ -75,8 +74,4 @@ footer {
         border: none;
     }
 
-    footer {
-      box-shadow: none;
-      border: none;  
-    }
 }
